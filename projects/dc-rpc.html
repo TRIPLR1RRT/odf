@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Added Font Awesome CDN -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -96,9 +97,16 @@
             text-align: center;
             font-weight: bold;
             transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Adds space between the icon and text */
         }
         .buttons a:hover {
             background-color: #0056b3;
+        }
+        .buttons i {
+            font-size: 20px; /* Adjust icon size */
         }
         .footer {
             margin-top: 20px;
@@ -125,9 +133,18 @@
                 <p>Modified by: N/A</p>
             </div>
             <div class="buttons">
-                <a href="https://github.com/TRIPLR1RRT/DC-RPC" target="_blank">GitHub</a>
-                <a href="https://github.com/TRIPLR1RRT/odf/raw/refs/heads/main/files/dc-rpc.zip" download>Download</a>
-                <a href="https://dsc.gg/od-flow" target="_blank">Support</a>
+                <!-- GitHub button with icon -->
+                <a href="https://github.com/TRIPLR1RRT/DC-RPC" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <!-- Download button with icon -->
+                <a href="https://github.com/TRIPLR1RRT/odf/raw/refs/heads/main/files/dc-rpc.zip" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+                <!-- Discord Support button with icon -->
+                <a href="https://dsc.gg/od-flow" target="_blank">
+                    <i class="fab fa-discord"></i> Support
+                </a>
             </div>
         </div>
     </div>
