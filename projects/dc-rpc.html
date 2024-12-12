@@ -16,6 +16,7 @@
             height: 100vh;
             background-color: #121212;
             color: #ffffff;
+            padding-top: 50px; /* Adjusted for the fixed bossbar */
         }
         .bossbar {
             background-color: #1e1e1e;
@@ -28,6 +29,7 @@
             position: fixed;
             top: 0;
             left: 0;
+            z-index: 10; /* Ensure bossbar stays on top */
         }
         .info {
             text-align: left;
@@ -48,7 +50,7 @@
         }
         .container {
             display: flex;
-            align-items: flex-start;
+            align-items: center; /* Vertically center the image */
             background-color: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
@@ -59,6 +61,8 @@
         .image-container {
             flex: 1;
             margin-right: 20px;
+            display: flex;
+            justify-content: center; /* Center image horizontally */
         }
         .image-container img {
             width: 300px;
@@ -109,7 +113,7 @@
     </div>
     <div class="container">
         <div class="image-container">
-            <img src="https://cdn-sd.pages.dev/img/IMG_20230204_131954.jpg" alt="Project Image">
+            <img src="your-image-url.png" alt="Project Image">
         </div>
         <div class="content">
             <div class="info">
