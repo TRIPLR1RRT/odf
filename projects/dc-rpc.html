@@ -1,10 +1,75 @@
-<html>
-  <head>
-    
-  </head>
-
-
-  <body>
-    soon
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .description {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="your-image-url.png" alt="Project Image">
+        </div>
+        <div class="description">
+            <p>This is a sample project description. Add your details here.</p>
+        </div>
+        <div class="buttons">
+            <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+            <a href="your-file.zip" download>Download</a>
+            <a href="https://discord.gg/your-invite" target="_blank">Support</a>
+        </div>
+    </div>
+</body>
 </html>
