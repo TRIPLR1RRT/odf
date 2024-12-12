@@ -21,12 +21,13 @@
             background-color: #1e1e1e;
             color: #ffffff;
             padding: 10px 20px;
-            width: 100%;
-            text-align: right;
+            width: 25%;
+            text-align: left;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             font-size: 16px;
             position: fixed;
             top: 0;
+            left: 0;
         }
         .info {
             text-align: center;
@@ -39,17 +40,19 @@
             margin-top: 20px;
         }
         .container {
-            text-align: center;
+            display: flex;
+            align-items: flex-start;
             background-color: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             width: 90%;
-            max-width: 400px;
+            max-width: 800px;
             margin-top: 100px;
         }
         .image-container {
-            margin-bottom: 20px;
+            flex: 1;
+            margin-right: 20px;
         }
         .image-container img {
             width: 100px;
@@ -57,11 +60,12 @@
             border-radius: 50%;
         }
         .description {
-            margin-bottom: 20px;
+            margin-top: 10px;
             font-size: 16px;
             color: #cccccc;
         }
         .buttons {
+            flex: 1;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -94,9 +98,9 @@
     <div class="container">
         <div class="image-container">
             <img src="your-image-url.png" alt="Project Image">
-        </div>
-        <div class="description">
-            <p>This is a sample project description. Add your details here.</p>
+            <div class="description">
+                <p>This is a sample project description. Add your details here.</p>
+            </div>
         </div>
         <div class="buttons">
             <a href="https://github.com/your-repo" target="_blank">GitHub</a>
