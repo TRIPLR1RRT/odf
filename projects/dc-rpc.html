@@ -36,8 +36,7 @@
             padding: 10px;
             border-radius: 8px;
             width: 100%;
-            max-width: 800px;
-            margin: 20px 0;
+            margin-bottom: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
         .info h3 {
@@ -49,8 +48,7 @@
         }
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             background-color: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
@@ -59,25 +57,30 @@
             max-width: 800px;
         }
         .image-container {
-            margin-bottom: 20px;
+            flex: 1;
+            margin-right: 20px;
         }
         .image-container img {
             width: 300px;
             height: auto;
             border-radius: 8px;
         }
+        .content {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         .description {
             margin-top: 10px;
             font-size: 16px;
             color: #cccccc;
-            text-align: center;
         }
         .buttons {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            width: 100%;
-            max-width: 300px;
+            margin-top: 20px;
         }
         .buttons a {
             text-decoration: none;
@@ -106,19 +109,21 @@
     </div>
     <div class="container">
         <div class="image-container">
-            <img src="https://cdn-sd.pages.dev/img/IMG_20230204_131954.jpg" alt="Project Image">
+            <img src="your-image-url.png" alt="Project Image">
         </div>
-        <div class="info">
-            <h3>Project Details</h3>
-            <p class="description">This is a sample project description. Add your details here.</p>
-            <p>Uploaded by: User</p>
-            <p>Uploaded on: Date/Month/Year</p>
-            <p>Modified by: User</p>
-        </div>
-        <div class="buttons">
-            <a href="https://github.com/your-repo" target="_blank">GitHub</a>
-            <a href="your-file.zip" download>Download</a>
-            <a href="https://discord.gg/your-invite" target="_blank">Support</a>
+        <div class="content">
+            <div class="info">
+                <h3>Project Details</h3>
+                <p class="description">This is a sample project description. Add your details here.</p>
+                <p>Uploaded by: User</p>
+                <p>Uploaded on: Date/Month/Year</p>
+                <p>Modified by: User</p>
+            </div>
+            <div class="buttons">
+                <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+                <a href="your-file.zip" download>Download</a>
+                <a href="https://discord.gg/your-invite" target="_blank">Support</a>
+            </div>
         </div>
     </div>
     <div class="footer">
