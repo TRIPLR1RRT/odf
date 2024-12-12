@@ -12,17 +12,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .bossbar {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 10px 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            font-size: 16px;
+            position: fixed;
+            top: 0;
+        }
+        .bossbar p {
+            margin: 5px 0;
         }
         .container {
             text-align: center;
-            background-color: #ffffff;
+            background-color: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             width: 90%;
             max-width: 400px;
+            margin-top: 80px;
         }
         .image-container {
             margin-bottom: 20px;
@@ -35,7 +52,7 @@
         .description {
             margin-bottom: 20px;
             font-size: 16px;
-            color: #333;
+            color: #cccccc;
         }
         .buttons {
             display: flex;
@@ -55,9 +72,21 @@
         .buttons a:hover {
             background-color: #0056b3;
         }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #cccccc;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+    <div class="bossbar">
+        <p><strong>OpenDevsFlow</strong></p>
+        <p>Uploaded by: User</p>
+        <p>Uploaded on: Date/Month/Year</p>
+        <p>Modified by: User</p>
+    </div>
     <div class="container">
         <div class="image-container">
             <img src="your-image-url.png" alt="Project Image">
@@ -70,6 +99,9 @@
             <a href="your-file.zip" download>Download</a>
             <a href="https://discord.gg/your-invite" target="_blank">Support</a>
         </div>
+    </div>
+    <div class="footer">
+        <p>&copy; OpenDevsFlow 2024. All rights reserved.</p>
     </div>
 </body>
 </html>
