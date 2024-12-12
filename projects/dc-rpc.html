@@ -56,11 +56,11 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             width: 90%;
-            max-width: 800px;
+            max-width: 900px; /* Increased the max width */
+            gap: 20px; /* Added gap between image and content */
         }
         .image-container {
             flex: 1;
-            margin-right: 20px;
             display: flex;
             justify-content: center; /* Center image horizontally */
         }
@@ -70,10 +70,11 @@
             border-radius: 8px;
         }
         .content {
-            flex: 2;
+            flex: 2; /* Ensures content takes more space */
             display: flex;
             flex-direction: column;
             gap: 10px;
+            flex-grow: 1; /* Ensures the content area can grow */
         }
         .description {
             margin-top: 10px;
