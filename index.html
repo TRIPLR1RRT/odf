@@ -350,7 +350,8 @@ Join us as we push the boundaries of technology, one project at a time. Let’s 
                             maxlength="999" style="resize:none"></textarea>
                 </div>
               </div>
-              <div id="success"></div> <button type="submit" class="btn btn-primary input-btn pull-right">Send</button><br />
+              <div id="form-status"></div>
+              <button type="submit" class="btn btn-primary input-btn pull-right">Send</button><br />
             </form>
           </div>
         </div>
@@ -403,7 +404,12 @@ Join us as we push the boundaries of technology, one project at a time. Let’s 
     })
     .then(response => {
       if (response.ok) {
-        alert('Message sent successfully!');
+        const formStatus = document.getElementById('form-status');
+        formStatus.textContent = 'Message sent successfully!';
+        setTimeout(() => {
+          formStatus.textContent = '';
+          form.reset();
+        }, 3000); // Reset after 3 seconds
       } else {
         alert('Error sending message. Please try again.');
       }
