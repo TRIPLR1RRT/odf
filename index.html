@@ -388,3 +388,52 @@ Join us as we push the boundaries of technology, one project at a time. Let’s 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+      async function sendContact(ev) {
+        ev.preventDefault();
+
+        const senderEmail = document
+          .getElementById('emailInput').value;
+        const senderMessage = document
+          .getElementById('messageInput').value;
+
+        const webhookBody = {
+          embeds: [{
+            title: 'Contact Form Submitted',
+            fields: [
+              { name: 'Sender', value: senderEmail },
+              { name: 'Message', value: senderMessage }
+            ]
+          }],
+        };
+
+        const webhookUrl = 'https://discord.com/api/webhooks/1317091364986683443/gfBByBgfbUCkZISB6HtuIKCUEs-wxwrsAb6VEB8KuWls51s0rbud1kPMaSva5aZkg3wv';
+
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(webhookBody),
+        });
+
+        if (response.ok) {
+          alert('I have received your message!');
+        } else {
+          alert('There was an error! Try again later!');
+        }
+      }
+    </script>
